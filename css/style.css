@@ -1,0 +1,141 @@
+/* ==========================================================================
+   VANGUARD & VOYAGE - FULL MASTER PRODUCTION STYLESHEET
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght=0,300;0,400;0,600;0,700;1,300&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght=0,400;0,600;1,400&display=swap');
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #050505;
+    color: #f3f4f6;
+}
+
+h1, h2, h3, h4, .font-luxury {
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 0.05em;
+}
+
+/* Glassmorphism Navigation Structure */
+.glass-nav {
+    background: rgba(8, 8, 8, 0.75);
+    backdrop-filter: blur(28px);
+    -webkit-backdrop-filter: blur(28px);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.glass-card {
+    background: rgba(15, 15, 15, 0.55);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+/* 💎 FIXED FLOATING ROUNDED MINIMAL CARD MENU (MOBILE VIEWPORT PERFECT SHAPE) */
+#navDrawer {
+    position: fixed;
+    top: 5rem;
+    right: 1rem;
+    width: 85%; 
+    max-width: 22rem; 
+    max-height: calc(100vh - 7rem);
+    background: rgba(12, 12, 12, 0.94);
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1.5rem;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.9);
+    z-index: 100;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    overflow-y: auto;
+}
+
+#navDrawer::-webkit-scrollbar {
+    width: 4px;
+}
+#navDrawer::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+/* ⏳ Premium Transition Global States */
+body, .glass-card, nav, a, h1, h2, h3, p, input, select, textarea, button {
+    transition: background-color 0.6s cubic-bezier(0.16, 1, 0.3, 1), 
+                border-color 0.6s ease, 
+                color 0.6s ease, 
+                box-shadow 0.6s ease;
+}
+
+/* ==========================================================================
+   🍦 SAND & CREAM LUXURY MODE UTILITY CONTRAST MAPS
+   ========================================================================== */
+body.luxury-sand-theme {
+    background-color: #f4f0ea;
+    color: #1c1a17;
+}
+
+body.luxury-sand-theme .text-white,
+body.luxury-sand-theme h1,
+body.luxury-sand-theme h2,
+body.luxury-sand-theme h3,
+body.luxury-sand-theme h4 {
+    color: #1c1a17 !important;
+}
+
+body.luxury-sand-theme .text-neutral-400,
+body.luxury-sand-theme .text-neutral-500 {
+    color: #5c564f !important;
+}
+
+body.luxury-sand-theme .glass-nav {
+    background: rgba(244, 240, 234, 0.85);
+    border: 1px solid rgba(28, 26, 23, 0.08);
+}
+
+body.luxury-sand-theme #navDrawer {
+    background: rgba(244, 240, 234, 0.98);
+    border: 1px solid rgba(28, 26, 23, 0.1);
+}
+
+body.luxury-sand-theme .glass-card {
+    background: rgba(255, 255, 255, 0.85) !important;
+    border: 1px solid rgba(28, 26, 23, 0.08) !important;
+}
+
+/* Fixes absolute tags overlay background textures in Sand layout view maps */
+/* ✅ Fix: Blog Modal text visibility in Sand Theme */
+body.luxury-sand-theme .bg-black\/80,
+body.luxury-sand-theme .bg-black\/70,
+body.luxury-sand-theme .bg-neutral-900,
+body.luxury-sand-theme #blogModal div {
+    background-color: #ebdcd0 !important;
+    color: #1c1a17 !important;
+    border: 1px solid rgba(28, 26, 23, 0.15) !important;
+}
+
+/* Is naye section ko theek uske neeche copy-paste kar do */
+body.luxury-sand-theme #modalContent,
+body.luxury-sand-theme #modalTitle,
+body.luxury-sand-theme #modalDate,
+body.luxury-sand-theme #modalCategory {
+    color: #1c1a17 !important;
+}
+
+body.luxury-sand-theme .border-neutral-900,
+body.luxury-sand-theme .border-neutral-900\/40,
+body.luxury-sand-theme hr {
+    border-color: rgba(28, 26, 23, 0.15) !important;
+}
+
+body.luxury-sand-theme .bg-white {
+    background-color: #1c1a17 !important;
+    color: #f4f0ea !important;
+}
+
+body.luxury-sand-theme footer {
+    background-color: #e3ded6 !important;
+    border-top: 1px solid rgba(28, 26, 23, 0.1);
+}
+
+/* Quiz Steps Controllers */
+.quiz-step { display: none; }
+.quiz-step.quiz-step-active { display: block; animation: quizFadeIn 0.5s ease forwards; }
+@keyframes quizFadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }

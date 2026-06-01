@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The V&amp;V Club | Elite Memberships</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 👑 EDITORIAL PLATFORM TYPOGRAPHIC OVERRIDES */
+        .membership-vault-stroke {
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+            color: transparent;
+        }
+        body.luxury-sand-theme .membership-vault-stroke {
+            -webkit-text-stroke: 1px rgba(28, 26, 23, 0.25);
+        }
+        body.luxury-sand-theme .tier-card-heading {
+            color: #1c1a17 !important;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden bg-[#050505]">
+
+    <!-- 🟢 NAV BAR (UNTOUCHED CORE FUNCTIONALITY) -->
+    <nav class="fixed top-4 left-4 right-4 z-50 glass-nav rounded-full px-8 py-4 flex justify-between items-center max-w-5xl mx-auto">
+        <div class="text-xl tracking-[0.25em] font-luxury font-bold text-white">
+            <a href="index.html">VANGUARD <span class="text-neutral-500 font-light">&amp;</span> VOYAGE</a>
+        </div>
+        <div class="flex items-center space-x-4">
+            <button id="themeSwitcherBtn" class="text-white hover:text-neutral-400 focus:outline-none w-8 h-8 rounded-full border border-white/10 flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-palette text-xs"></i>
+            </button>
+            <button id="menuBtn" class="text-white hover:text-neutral-400 focus:outline-none flex items-center space-x-2">
+                <i class="fa-solid fa-bars-staggered text-lg"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 💎 DYNAMIC DRAWER MENU (ALL 10 LINK ROUTERS PRESERVED) -->
+    <div id="navDrawer" class="opacity-0 pointer-events-none scale-95 -translate-y-4 p-6 md:p-8 flex flex-col justify-between">
+        <div class="flex justify-between items-center border-b border-neutral-900 pb-3 mb-4">
+            <div class="text-[10px] tracking-widest font-luxury text-neutral-400">METRICS NAVIGATION</div>
+            <button id="closeBtn" class="text-neutral-400 hover:text-white text-xl"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="flex flex-col space-y-3 text-lg font-luxury py-2">
+            <a href="index.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Home Base</a>
+            <a href="travel.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Travel Packages</a>
+            <a href="events.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Event Production</a>
+            <a href="masterpieces.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Our Masterpieces</a>
+            <a href="blog.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Editorial Blog</a>
+            <a href="about.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Brand Heritage</a>
+            <a href="membership.html" class="nav-link-item text-white border-l-2 border-white pl-2">The V&amp;V Club</a>
+            <a href="sustainability.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Conscious Footprints</a>
+            <a href="reviews.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Guest Ledger</a>
+            <a href="contact.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Contact Desk</a>
+        </div>
+        <div class="text-[9px] text-neutral-600 border-t border-neutral-900 pt-3 mt-4">© 2026 Vanguard &amp; Voyage.</div>
+    </div>
+
+    <!-- 🌌 NEW ASYMMETRIC MEMBERSHIP HEADER BLOCK -->
+    <header class="pt-44 pb-16 max-w-5xl mx-auto px-6 relative">
+        <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"></div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-end border-b border-neutral-900/60 pb-10">
+            <div class="md:col-span-8 space-y-3">
+                <div class="flex items-center space-x-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-white/40 animate-pulse"></span>
+                    <span class="text-[10px] uppercase tracking-[0.5em] text-neutral-500 font-bold block">Invite-Only Tiering</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold font-luxury text-white leading-[0.95] tracking-tight">
+                    The Vanguard <br>
+                    <span class="membership-vault-stroke">Private Club</span>
+                </h1>
+            </div>
+            <div class="md:col-span-4 text-left md:text-right">
+                <p class="text-xs text-neutral-400 max-w-xs md:ml-auto font-light leading-relaxed">
+                    Sovereign Vault Access. Registration requests are cross-verified across absolute identity validation parameters globally.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- 🌌 PREMIUM LUXURY CARDS GRID SYSTEM (STATIC 3D TILT ASSIGNED) -->
+    <main class="max-w-5xl mx-auto px-6 pb-36 grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-12 items-start">
+        
+        <!-- TIER 1: V&V NOIR -->
+        <div class="glass-card tilt-3d p-6 rounded-2xl border border-neutral-900/60 bg-neutral-950/20 backdrop-blur-md flex flex-col justify-between min-h-[400px] transition-all duration-500 hover:border-neutral-800 group">
+            <div class="space-y-5">
+                <div class="flex justify-between items-center text-[9px] uppercase tracking-[0.25em] text-neutral-500 font-bold">
+                    <span>Tier Deck 01</span>
+                    <span class="w-2 h-2 rounded-full bg-neutral-800 group-hover:bg-neutral-400 transition-colors"></span>
+                </div>
+                <div class="space-y-1">
+                    <div class="text-[10px] uppercase tracking-widest text-neutral-400 font-bold">Elite Membership</div>
+                    <h3 class="tier-card-heading text-2xl font-luxury text-white tracking-wide">V&amp;V NOIR</h3>
+                </div>
+                <div class="w-full h-px bg-neutral-900"></div>
+                <p class="text-xs text-neutral-400 font-light leading-relaxed">Unlocks priority bespoke booking frameworks across curated listed domestic sanctuaries with custom 12/7 engineering route support desk access.</p>
+            </div>
+            
+            <form onsubmit="sendInquiryViaWhatsApp(event, 'Noir Membership Request')" class="mt-8">
+                <input type="hidden" name="Tier" value="Noir Tier Setup">
+                <button type="submit" class="w-full bg-neutral-900 border border-neutral-800 hover:border-neutral-600 text-white py-3 rounded-xl text-[10px] uppercase tracking-widest font-bold transition-all hover:bg-black">
+                    Apply Ingress via WA
+                </button>
+            </form>
+        </div>
+
+        <!-- TIER 2: V&V SOVEREIGN (CRAZY COMPACT FOCUS PROFILE) -->
+        <div class="glass-card tilt-3d p-6 rounded-2xl border border-white/10 bg-neutral-900/10 backdrop-blur-md flex flex-col justify-between min-h-[420px] relative shadow-2xl md:-translate-y-4 group">
+            <div class="absolute top-0 right-6 -translate-y-1/2 bg-white text-black px-3 py-1 rounded-full text-[8px] uppercase tracking-widest font-black shadow-lg">
+                Core Tier
+            </div>
+            <div class="space-y-5">
+                <div class="flex justify-between items-center text-[9px] uppercase tracking-[0.25em] text-neutral-400 font-bold">
+                    <span>Tier Deck 02</span>
+                    <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+                </div>
+                <div class="space-y-1">
+                    <div class="text-[10px] uppercase tracking-widest text-neutral-300 font-bold">Sovereign Membership</div>
+                    <h3 class="tier-card-heading text-2xl font-luxury text-white tracking-wide">V&amp;V SOVEREIGN</h3>
+                </div>
+                <div class="w-full h-px bg-neutral-800"></div>
+                <p class="text-xs text-neutral-300 font-light leading-relaxed">Full 24/7 hyper-personalized physical concierges, elite private charter aviation slots allocation, and direct priority VIP checkpoint terminal clearance cards.</p>
+            </div>
+            
+            <form onsubmit="sendInquiryViaWhatsApp(event, 'Sovereign Core Membership Inquiry')" class="mt-8">
+                <input type="hidden" name="Tier" value="Sovereign Ledger Setup">
+                <button type="submit" class="w-full bg-white hover:bg-neutral-200 text-black py-3 rounded-xl text-[10px] uppercase tracking-widest font-black transition-all shadow-xl hover:scale-[1.02]">
+                    Request Verification Via WA
+                </button>
+            </form>
+        </div>
+
+        <!-- TIER 3: V&V APEX APOGEE -->
+        <div class="glass-card tilt-3d p-6 rounded-2xl border border-neutral-900/60 bg-neutral-950/20 backdrop-blur-md flex flex-col justify-between min-h-[400px] transition-all duration-500 hover:border-neutral-800 group">
+            <div class="space-y-5">
+                <div class="flex justify-between items-center text-[9px] uppercase tracking-[0.25em] text-neutral-500 font-bold">
+                    <span>Tier Deck 03</span>
+                    <span class="w-2 h-2 rounded-full bg-neutral-900"></span>
+                </div>
+                <div class="space-y-1">
+                    <div class="text-[10px] uppercase tracking-widest text-neutral-400 font-bold">Imperial Membership</div>
+                    <h3 class="tier-card-heading text-2xl font-luxury text-white tracking-wide">V&amp;V APEX APOGEE</h3>
+                </div>
+                <div class="w-full h-px bg-neutral-900"></div>
+                <p class="text-xs text-neutral-400 font-light leading-relaxed">Absolute invite-only vault. Features unlimited customized private jet route assignments, absolute multi-point fort takeover permissions, and zero trace protocols.</p>
+            </div>
+            
+            <div class="mt-8">
+                <button class="w-full bg-neutral-950 border border-neutral-900 text-neutral-600 py-3 rounded-xl text-[10px] uppercase tracking-widest font-bold cursor-not-allowed text-center">
+                    By Invitation Only
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- 🟢 MASTER BRAND FOOTER TERMINAL (UPDATED GLOBAL HOTLINE & ADDRESS CONSTRAINTS) -->
+    <footer class="bg-[#030303] border-t border-neutral-900 text-neutral-400 text-xs">
+        <div class="max-w-5xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="space-y-4">
+                <div class="text-white text-base tracking-widest font-luxury font-bold">VANGUARD &amp; VOYAGE</div>
+                <p class="text-neutral-500 font-light leading-relaxed">Curating absolute bespoke parameters across luxury travel coordination and elite structural event staging sectors globally.</p>
+            </div>
+            <div class="space-y-2">
+                <h4 class="text-white font-bold text-[11px] uppercase tracking-widest">Platform Channels</h4>
+                <a href="travel.html" class="block hover:text-white text-neutral-500">Travel Architecture</a>
+                <a href="events.html" class="block hover:text-white text-neutral-500">Event Production</a>
+                <a href="masterpieces.html" class="block hover:text-white text-neutral-500">Our Masterpieces</a>
+            </div>
+            <div class="space-y-2">
+                <h4 class="text-white font-bold text-[11px] uppercase tracking-widest">Elite Links</h4>
+                <a href="membership.html" class="block hover:text-white text-neutral-500">The V&amp;V Club</a>
+                <a href="sustainability.html" class="block hover:text-white text-neutral-500">Conscious Luxury</a>
+                <a href="reviews.html" class="block hover:text-white text-neutral-500">Guest Ledger Letters</a>
+            </div>
+            <div class="space-y-2">
+                <h4 class="text-white font-bold text-[11px] uppercase tracking-widest">Headquarters</h4>
+                <p class="text-neutral-500 leading-relaxed font-light">
+                    Sovereign Towers, 7th Floor, Golf Course Road, Gurugram, 122002<br>
+                    Hotline: +91 63674 05386
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- UNTOUCHED UNIFORM FLOATING WHATSAPP INTERFACE -->
+    <a id="whatsappFloat" target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-transform hover:scale-110">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            if (typeof applyLuxury3DTilt === "function") {
+                applyLuxury3DTilt();
+            }
+        });
+    </script>
+</body>
+</html>

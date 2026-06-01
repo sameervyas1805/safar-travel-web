@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Heritage | Vanguard & Voyage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 👑 EDITORIAL STYLING FOR CRAZY HIGH-NET ARCHITECTURE */
+        .brand-heritage-stroke {
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+            color: transparent;
+        }
+        body.luxury-sand-theme .brand-heritage-stroke {
+            -webkit-text-stroke: 1px rgba(28, 26, 23, 0.25);
+        }
+        body.luxury-sand-theme .heritage-card-title {
+            color: #1c1a17 !important;
+        }
+        body.luxury-sand-theme .heritage-drop-cap::first-letter {
+            color: #1c1a17 !important;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden bg-[#050505]">
+
+    <!-- 🟢 NAV BAR (UNTOUCHED CORE FUNCTIONALITY) -->
+    <nav class="fixed top-4 left-4 right-4 z-50 glass-nav rounded-full px-8 py-4 flex justify-between items-center max-w-5xl mx-auto">
+        <div class="text-xl tracking-[0.25em] font-luxury font-bold text-white">
+            <a href="index.html">VANGUARD <span class="text-neutral-500 font-light">&amp;</span> VOYAGE</a>
+        </div>
+        <div class="flex items-center space-x-4">
+            <button id="themeSwitcherBtn" class="text-white hover:text-neutral-400 focus:outline-none w-8 h-8 rounded-full border border-white/10 flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-palette text-xs"></i>
+            </button>
+            <button id="menuBtn" class="text-white hover:text-neutral-400 focus:outline-none flex items-center space-x-2">
+                <i class="fa-solid fa-bars-staggered text-lg"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 💎 DYNAMIC DRAWER MENU (ALL 10 LINK ROUTERS PRESERVED) -->
+    <div id="navDrawer" class="opacity-0 pointer-events-none scale-95 -translate-y-4 p-6 md:p-8 flex flex-col justify-between">
+        <div class="flex justify-between items-center border-b border-neutral-900 pb-3 mb-4">
+            <div class="text-[10px] tracking-widest font-luxury text-neutral-400">METRICS NAVIGATION</div>
+            <button id="closeBtn" class="text-neutral-400 hover:text-white text-xl"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="flex flex-col space-y-3 text-lg font-luxury py-2">
+            <a href="index.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Home Base</a>
+            <a href="travel.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Travel Packages</a>
+            <a href="events.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Event Production</a>
+            <a href="masterpieces.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Our Masterpieces</a>
+            <a href="blog.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Editorial Blog</a>
+            <a href="about.html" class="nav-link-item text-white border-l-2 border-white pl-2">Brand Heritage</a>
+            <a href="membership.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">The V&amp;V Club</a>
+            <a href="sustainability.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Conscious Footprints</a>
+            <a href="reviews.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Guest Ledger</a>
+            <a href="contact.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Contact Desk</a>
+        </div>
+        <div class="text-[9px] text-neutral-600 border-t border-neutral-900 pt-3 mt-4">© 2026 Vanguard &amp; Voyage.</div>
+    </div>
+
+    <!-- 🌌 NEW ASYMMETRIC ATTRACTIVE BRAND HERITAGE HEADER BLOCK -->
+    <header class="pt-44 pb-16 max-w-5xl mx-auto px-6 relative">
+        <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"></div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-end border-b border-neutral-900/60 pb-10">
+            <div class="md:col-span-8 space-y-3">
+                <div class="flex items-center space-x-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-neutral-600"></span>
+                    <span class="text-[10px] uppercase tracking-[0.5em] text-neutral-500 font-bold block">Historical Legacy</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold font-luxury text-white leading-[0.95] tracking-tight">
+                    The Architectural <br>
+                    <span class="brand-heritage-stroke">Journey</span>
+                </h1>
+            </div>
+            <div class="md:col-span-4 text-left md:text-right">
+                <span class="text-[9px] uppercase tracking-[0.3em] text-neutral-500 font-bold block mb-1">Est. MMXXIV</span>
+                <p class="text-[10px] uppercase tracking-widest text-neutral-400 font-light">Vanguard Global Operations Registry</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- 🌌 LUXURY EDITORIAL NARRATIVE PROFILE SECTION -->
+    <section class="max-w-4xl mx-auto px-6 pb-24 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-16 items-start">
+        <div class="md:col-span-4 border-l border-neutral-900/60 pl-6 space-y-2">
+            <h4 class="text-neutral-500 text-[10px] uppercase tracking-[0.3em] font-bold">The Core Mandate</h4>
+            <p class="text-xs text-neutral-400 font-light leading-relaxed">Sculpting spatial layouts and high-end priority coordination parameters across high-net individuals and premium networks.</p>
+        </div>
+        <div class="md:col-span-8 text-xs md:text-sm text-neutral-400 leading-relaxed font-light space-y-6 text-justify heritage-drop-cap">
+            <p class="first-letter:text-5xl first-letter:font-luxury first-letter:text-white first-letter:float-left first-letter:mr-3 first-letter:leading-none">Vanguard & Voyage represents the structural convergence of high-profile global travel matrix engineering and meticulous corporate asset choreography. We operate on the foundational law that elite experiences shouldn't merely fulfill desires—they must capture frameworks that turn into timeless organizational legacies.</p>
+            <p>Our dedicated operations run deep behind the operational line, utilizing complex logistics parameters, private aviation channels, and priority destination gate tracking. From high-altitude strategy pavilions built inside isolated alpine valleys to monumental seaside fortress alterations for private vows, we deploy absolute symmetry across our builds.</p>
+        </div>
+    </section>
+
+    <!-- 🌌 CRAZY MINIMALIST INDUSTRIAL CARDS SYSTEM (STATIC + 3D TILT READY) -->
+    <section class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 pb-32">
+        
+        <!-- BLOCK 01 -->
+        <div class="glass-card tilt-3d p-6 rounded-2xl border border-neutral-900/60 bg-neutral-950/20 backdrop-blur-md space-y-4 group transition-all duration-300 hover:border-neutral-800 flex flex-col justify-between">
+            <div class="space-y-4">
+                <div class="w-10 h-10 rounded-xl bg-neutral-900/40 border border-neutral-800 flex items-center justify-center text-white transition-all group-hover:border-white group-hover:bg-white group-hover:text-black">
+                    <i class="fa-solid fa-gem text-xs"></i>
+                </div>
+                <div class="space-y-1">
+                    <h3 class="heritage-card-title font-bold font-luxury text-white text-lg tracking-wide">Elite Curation Matrix</h3>
+                    <p class="text-xs text-neutral-400 font-light leading-relaxed">Fine-tuned priority alignment processing across high-end customized blueprints and builds.</p>
+                </div>
+            </div>
+            <div class="pt-2">
+                <div class="w-full h-px bg-neutral-900/60 mb-2"></div>
+                <span class="text-[8px] uppercase tracking-widest text-neutral-500 font-bold block">Parameter Node 01</span>
+            </div>
+        </div>
+
+        <!-- BLOCK 02 -->
+        <div class="glass-card tilt-3d p-6 rounded-2xl border border-neutral-900/60 bg-neutral-950/20 backdrop-blur-md space-y-4 group transition-all duration-300 hover:border-neutral-800 flex flex-col justify-between md:translate-y-4">
+            <div class="space-y-4">
+                <div class="w-10 h-10 rounded-xl bg-neutral-900/40 border border-neutral-800 flex items-center justify-center text-white transition-all group-hover:border-white group-hover:bg-white group-hover:text-black">
+                    <i class="fa-solid fa-shield-halved text-xs"></i>
+                </div>
+                <div class="space-y-1">
+                    <h3 class="heritage-card-title font-bold font-luxury text-white text-lg tracking-wide">Autonomous Security</h3>
+                    <p class="text-xs text-neutral-400 font-light leading-relaxed">Completely isolated island takeovers, private dynamic gates, and zero data trace configurations.</p>
+                </div>
+            </div>
+            <div class="pt-2">
+                <div class="w-full h-px bg-neutral-900/60 mb-2"></div>
+                <span class="text-[8px] uppercase tracking-widest text-neutral-500 font-bold block">Parameter Node 02</span>
+            </div>
+        </div>
+
+        <!-- BLOCK 03 -->
+        <div class="glass-card tilt-3d p-6 rounded-2xl border border-neutral-900/60 bg-neutral-950/20 backdrop-blur-md space-y-4 group transition-all duration-300 hover:border-neutral-800 flex flex-col justify-between md:-translate-y-2">
+            <div class="space-y-4">
+                <div class="w-10 h-10 rounded-xl bg-neutral-900/40 border border-neutral-800 flex items-center justify-center text-white transition-all group-hover:border-white group-hover:bg-white group-hover:text-black">
+                    <i class="fa-solid fa-helicopter text-xs"></i>
+                </div>
+                <div class="space-y-1">
+                    <h3 class="heritage-card-title font-bold font-luxury text-white text-lg tracking-wide">Aviation Curation</h3>
+                    <p class="text-xs text-neutral-400 font-light leading-relaxed">Direct double engine charter alignments synchronizing precise private airport flight slots.</p>
+                </div>
+            </div>
+            <div class="pt-2">
+                <div class="w-full h-px bg-neutral-900/60 mb-2"></div>
+                <span class="text-[8px] uppercase tracking-widest text-neutral-500 font-bold block">Parameter Node 03</span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- 🟢 MASTER BRAND FOOTER TERMINAL -->
+    <footer class="bg-[#030303] border-t border-neutral-900 text-neutral-400 text-xs">
+        <div class="max-w-5xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="space-y-4">
+                <div class="text-white text-base tracking-widest font-luxury font-bold">VANGUARD &amp; VOYAGE</div>
+                <p class="text-neutral-500 font-light leading-relaxed">Curating absolute bespoke parameters across luxury travel coordination and elite structural event staging sectors globally.</p>
+            </div>
+            <div class="space-y-2">
+                <h4 class="text-white font-bold text-[11px] uppercase tracking-widest">Platform Channels</h4>
+                <a href="travel.html" class="block hover:text-white text-neutral-500">Travel Architecture</a>
+                <a href="events.html" class="block hover:text-white text-neutral-500">Event Production</a>
+                <a href="masterpieces.html" class="block hover:text-white text-neutral-500">Our Masterpieces</a>
+            </div>
+            <div class="space-y-2">
+                <h4 class="text-white font-bold text-[11px] uppercase tracking-widest">Elite Links</h4>
+                <a href="membership.html" class="block hover:text-white text-neutral-500">The V&amp;V Club</a>
+                <a href="sustainability.html" class="block hover:text-white text-neutral-500">Conscious Luxury</a>
+                <a href="reviews.html" class="block hover:text-white text-neutral-500">Guest Ledger Letters</a>
+            </div>
+            <div class="space-y-2">
+                <h4 class="text-white font-bold text-[11px] uppercase tracking-widest">Headquarters</h4>
+                <p class="text-neutral-500 leading-relaxed font-light">Sovereign Towers, 7th Floor, Golf Course Road, Gurugram, 122002<br>Hotline: +91 63674 05386</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- UNTOUCHED UNIFORM FLOATING WHATSAPP INTERFACE -->
+    <a id="whatsappFloat" target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-transform hover:scale-110">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Auto initialization callback trigger safely mapping window loading nodes
+        document.addEventListener("DOMContentLoaded", () => {
+            if (typeof applyLuxury3DTilt === "function") {
+                applyLuxury3DTilt();
+            }
+        });
+    </script>
+</body>
+</html>

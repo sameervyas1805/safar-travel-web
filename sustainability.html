@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conscious Footprints | Vanguard & Voyage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 👑 ADDITIONAL EDITORIAL FINISHES FOR PREMIUM SUSTAINABILITY INTERFACE */
+        .sus-header-stroke {
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+            color: transparent;
+        }
+        body.luxury-sand-theme .sus-header-stroke {
+            -webkit-text-stroke: 1px rgba(28, 26, 23, 0.25);
+        }
+        body.luxury-sand-theme .sus-card-heading {
+            color: #1c1a17 !important;
+        }
+
+        /* 🍦 DYNAMIC SAND THEME CONTAINERS & TEXT OVERRIDES */
+        body.luxury-sand-theme .sus-alternating-card {
+            background-color: transparent !important;
+            border-color: rgba(28, 26, 23, 0.15) !important;
+        }
+        body.luxury-sand-theme .sus-alternating-card p {
+            color: #4a443e !important;
+        }
+        body.luxury-sand-theme .sus-meta-text {
+            color: #5c564f !important;
+        }
+        body.luxury-sand-theme .sus-badge-box {
+            background-color: #1c1a17 !important;
+            color: #ebdcd0 !important;
+            border-color: rgba(28, 26, 23, 0.15) !important;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden bg-[#050505]">
+
+    <!-- 🟢 NAV BAR (UNTOUCHED CORE FUNCTIONALITY) -->
+    <nav class="fixed top-4 left-4 right-4 z-50 glass-nav rounded-full px-8 py-4 flex justify-between items-center max-w-5xl mx-auto">
+        <div class="text-xl tracking-[0.25em] font-luxury font-bold text-white">
+            <a href="index.html">VANGUARD <span class="text-neutral-500 font-light">&amp;</span> VOYAGE</a>
+        </div>
+        <div class="flex items-center space-x-4">
+            <button id="themeSwitcherBtn" class="text-white hover:text-neutral-400 focus:outline-none w-8 h-8 rounded-full border border-white/10 flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-palette text-xs"></i>
+            </button>
+            <button id="menuBtn" class="text-white hover:text-neutral-400 focus:outline-none flex items-center space-x-2">
+                <i class="fa-solid fa-bars-staggered text-lg"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 💎 DYNAMIC DRAWER MENU (ALL 10 LINK ROUTERS PRESERVED) -->
+    <div id="navDrawer" class="opacity-0 pointer-events-none scale-95 -translate-y-4 p-6 md:p-8 flex flex-col justify-between">
+        <div class="flex justify-between items-center border-b border-neutral-900 pb-3 mb-4">
+            <div class="text-[10px] tracking-widest font-luxury text-neutral-400">METRICS NAVIGATION</div>
+            <button id="closeBtn" class="text-neutral-400 hover:text-white text-xl"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="flex flex-col space-y-3 text-lg font-luxury py-2">
+            <a href="index.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Home Base</a>
+            <a href="travel.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Travel Packages</a>
+            <a href="events.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Event Production</a>
+            <a href="masterpieces.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Our Masterpieces</a>
+            <a href="blog.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Editorial Blog</a>
+            <a href="about.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Brand Heritage</a>
+            <a href="membership.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">The V&amp;V Club</a>
+            <a href="sustainability.html" class="nav-link-item text-white border-l-2 border-white pl-2">Conscious Luxury</a>
+            <a href="reviews.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Guest Ledger</a>
+            <a href="contact.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Contact Desk</a>
+        </div>
+        <div class="text-[9px] text-neutral-600 border-t border-neutral-900 pt-3 mt-4">© 2026 Vanguard &amp; Voyage.</div>
+    </div>
+
+    <!-- 🌌 NEW ASYMMETRIC ATTRACTIVE EDITORIAL HEADER BLOCK -->
+    <header class="pt-44 pb-16 max-w-5xl mx-auto px-6 relative">
+        <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"></div>
+        
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between border-b border-neutral-900/60 pb-10 gap-8">
+            <div class="space-y-3">
+                <div class="flex items-center space-x-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-neutral-600"></span>
+                    <span class="text-[10px] uppercase tracking-[0.5em] text-neutral-500 font-bold block">Conscious Luxury Parameters</span>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-bold font-luxury text-white leading-none tracking-tight">
+                    Carbon Neutral <br class="hidden md:block">
+                    <span class="sus-header-stroke">Legacies</span>
+                </h1>
+            </div>
+            <div class="max-w-xs">
+                <p class="text-xs text-neutral-500 font-light leading-relaxed text-left md:text-right">
+                    Balancing parameters of absolute sensory indulgence with strict, immutable ecological footprint metrics across all structural spheres.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- 🌌 ALTERNATING MAGAZINE STYLE CONTAINER WITH RESPONSIVE BACKGROUND ENGINE -->
+    <main class="max-w-5xl mx-auto px-6 pb-32 pt-6 space-y-16">
+        
+        <!-- CARD 01: IMAGE LEFT, CONTENT RIGHT -->
+        <article class="sus-alternating-card glass-card border border-neutral-900/60 rounded-[2rem] p-5 flex flex-col md:flex-row gap-8 items-center transition-all duration-500 hover:border-neutral-800/80 group tilt-3d">
+            <div class="w-full md:w-2/5 h-56 md:h-64 overflow-hidden rounded-[1.5rem] relative flex-shrink-0">
+                <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 opacity-70">
+                <div class="sus-badge-box absolute top-4 left-4 bg-black/90 border border-white/10 backdrop-blur-md px-3 py-1 rounded text-[8px] font-bold uppercase tracking-[0.2em] text-white">
+                    Framework 01
+                </div>
+            </div>
+            <div class="w-full md:w-3/5 space-y-4 px-2">
+                <div class="sus-meta-text flex items-center space-x-3 text-[9px] font-bold text-neutral-500 tracking-[0.2em] uppercase">
+                    <span>Aviation Core</span>
+                    <span class="w-1 h-1 bg-neutral-800 rounded-full"></span>
+                    <span>Certified Vector Stream</span>
+                </div>
+                <h2 class="sus-card-heading text-xl md:text-2xl font-bold font-luxury text-white tracking-wide transition-colors group-hover:text-neutral-200 leading-snug">100% Offset Aviation Operations</h2>
+                <p class="text-xs text-neutral-400 font-light leading-relaxed tracking-wide text-justify">Every single flight route mapped inside the V&amp;V Club network runs under strict carbon offset frameworks. We securely invest configuration capital directly into community forest preservation programs across the Western Ghats and Himalayan eco-strips to cancel footprint metrics entirely.</p>
+                <div class="pt-2">
+                    <span class="sus-meta-text text-[9px] uppercase tracking-widest text-neutral-500 font-bold block">Verified Blueprint Locked</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- CARD 02: IMAGE RIGHT, CONTENT LEFT -->
+        <article class="sus-alternating-card glass-card border border-neutral-900/60 rounded-[2rem] p-5 flex flex-col md:flex-row-reverse gap-8 items-center transition-all duration-500 hover:border-neutral-800/80 group tilt-3d">
+            <div class="w-full md:w-2/5 h-56 md:h-64 overflow-hidden rounded-[1.5rem] relative flex-shrink-0">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 opacity-70">
+                <div class="sus-badge-box absolute top-4 left-4 bg-black/90 border border-white/10 backdrop-blur-md px-3 py-1 rounded text-[8px] font-bold uppercase tracking-[0.2em] text-white">
+                    Framework 02
+                </div>
+            </div>
+            <div class="w-full md:w-3/5 space-y-4 px-2">
+                <div class="sus-meta-text flex items-center space-x-3 text-[9px] font-bold text-neutral-500 tracking-[0.2em] uppercase">
+                    <span>Staging Production</span>
+                    <span class="w-1 h-1 bg-neutral-800 rounded-full"></span>
+                    <span>Circular Build Protocol</span>
+                </div>
+                <h2 class="sus-card-heading text-xl md:text-2xl font-bold font-luxury text-white tracking-wide transition-colors group-hover:text-neutral-200 leading-snug">Zero-Plastic Structural Staging</h2>
+                <p class="text-xs text-neutral-400 font-light leading-relaxed tracking-wide text-justify">Our event production materials discard single-use parameters entirely. Scaffolding, luxury seating pavilions, staging structures, and fine banquet parameters utilize modular structural alloys and zero-trace organic composites that recycle flawlessly.</p>
+                <div class="pt-2">
+                    <span class="sus-meta-text text-[9px] uppercase tracking-widest text-neutral-500 font-bold block">Zero Data Trace Configuration</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- CARD 03: IMAGE LEFT, CONTENT RIGHT -->
+        <article class="sus-alternating-card glass-card border border-neutral-900/60 rounded-[2rem] p-5 flex flex-col md:flex-row gap-8 items-center transition-all duration-500 hover:border-neutral-800/80 group tilt-3d">
+            <div class="w-full md:w-2/5 h-56 md:h-64 overflow-hidden rounded-[1.5rem] relative flex-shrink-0">
+                <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 opacity-70">
+                <div class="sus-badge-box absolute top-4 left-4 bg-black/90 border border-white/10 backdrop-blur-md px-3 py-1 rounded text-[8px] font-bold uppercase tracking-[0.2em] text-white">
+                    Framework 03
+                </div>
+            </div>
+            <div class="w-full md:w-3/5 space-y-4 px-2">
+                <div class="sus-meta-text flex items-center space-x-3 text-[9px] font-bold text-neutral-500 tracking-[0.2em] uppercase">
+                    <span>Community Wealth</span>
+                    <span class="w-1 h-1 bg-neutral-800 rounded-full"></span>
+                    <span>Sovereign Legacy Ledger</span>
+                </div>
+                <h2 class="sus-card-heading text-xl md:text-2xl font-bold font-luxury text-white tracking-wide transition-colors group-hover:text-neutral-200 leading-snug">Indigenous Heritage Funding</h2>
+                <p class="text-xs text-neutral-400 font-light leading-relaxed tracking-wide text-justify">A fixed percentage of itinerary booking parameters is directly routed into the sovereign hands of local community gatekeepers. We protect localized ancient craft guilds, flora bio-nets, and heritage architecture landmarks wherever our tracks descend.</p>
+                <div class="pt-2">
+                    <span class="sus-meta-text text-[9px] uppercase tracking-widest text-neutral-500 font-bold block">Sovereign Asset Flow</span>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- 🟢 MASTER BRAND FOOTER TERMINAL -->
+    <footer class="bg-[#030303] border-t border-neutral-900 text-neutral-400 text-xs">
+        <div class="max-w-5xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="space-y-4">
+                <div class="text-white text-base tracking-widest font-luxury font-bold">VANGUARD &amp; VOYAGE</div>
+                <p class="text-neutral-500 font-light leading-relaxed">Curating absolute bespoke parameters across luxury travel coordination and elite structural event staging sectors globally.</p>
+            </div>
+            <div class="space-y-2">
+                <h4 class="text-white font-bold text-[11px] uppercase tracking-widest">Platform Channels</h4>
+                <a href="travel.html" class="block hover:text-white text-neutral-500">Travel Architecture</a>
+                <a href="events.html" class="block hover:text-white text-neutral-500">Event Production</a>
+                <a href="masterpieces.html" class="block hover:text-white text-neutral-500">Our Masterpieces</a>
+            </div>
+            <div class="space-y-2">
+                <h4 class="text-white font-bold text-[11px] uppercase tracking-widest">Elite Links</h4>
+                <a href="membership.html" class="block hover:text-white text-neutral-500">The V&amp;V Club</a>
+                <a href="sustainability.html" class="block hover:text-white text-neutral-500">Conscious Luxury</a>
+                <a href="reviews.html" class="block hover:text-white text-neutral-500">Guest Ledger Letters</a>
+            </div>
+            <div class="space-y-2">
+                <h4 class="text-white font-bold text-[11px] uppercase tracking-widest">Headquarters</h4>
+                <p class="text-neutral-500 leading-relaxed font-light">
+                    Sovereign Towers, 7th Floor, Golf Course Road, Gurugram, 122002<br>
+                    Hotline: +91 63674 05386
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- UNTOUCHED UNIFORM FLOATING WHATSAPP INTERFACE -->
+    <a id="whatsappFloat" target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-transform hover:scale-110">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            if (typeof applyLuxury3DTilt === "function") {
+                applyLuxury3DTilt();
+            }
+        });
+    </script>
+</body>
+</html>

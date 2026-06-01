@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanguard & Voyage | Luxury Base</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 👑 EDITORIAL STYLING FOR ULTRA-PREMIUM GRAPHICS */
+        .luxury-text-stroke {
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.25);
+            color: transparent;
+        }
+        body.luxury-sand-theme .luxury-text-stroke {
+            -webkit-text-stroke: 1px rgba(28, 26, 23, 0.3);
+        }
+        
+        /* 🍦 DYNAMIC SAND THEME HEADINGS OVERRIDES */
+        body.luxury-sand-theme .filter-indicator {
+            background-color: #ebdcd0 !important;
+            color: #1c1a17 !important;
+        }
+
+        /* ⚡ FORCE EXPLICIT WHITE FOR HERO CARDS ELEMENTS REGARDLESS OF THEME SWITCHER */
+        .hero-main-title {
+            color: #ffffff !important;
+        }
+        .hero-action-link {
+            color: #ffffff !important;
+            border-color: rgba(255, 255, 255, 0.25) !important;
+        }
+
+        /* Ambient Aurora Radial Flow Mesh */
+        .luxury-aurora-mesh {
+            background: radial-gradient(circle at 80% 20%, rgba(255,255,255,0.03) 0%, transparent 50%),
+                        radial-gradient(circle at 20% 80%, rgba(255,255,255,0.02) 0%, transparent 50%);
+        }
+
+        /* 🚀 HARDWARE ACCELERATED TILT BALANCERS (Ensures zero conflicts with main.js script) */
+        .tilt-3d {
+            transform-style: preserve-3d;
+            perspective: 1000px;
+            transition: transform 0.1s ease, box-shadow 0.3s ease;
+        }
+
+        /* Focus Interaction Styles: Soften non-hovered card meshes */
+        .hero-card-deck:hover .tilt-3d:not(:hover) {
+            opacity: 0.4 !important;
+            transform: scale(0.96) !important;
+            filter: blur(2px) !important;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden bg-[#050505]">
+
+    <!-- 🟢 NAV BAR (UNTOUCHED CORE FUNCTIONALITY) -->
+    <nav class="fixed top-4 left-4 right-4 z-50 glass-nav rounded-full px-8 py-4 flex justify-between items-center max-w-5xl mx-auto">
+        <div class="text-xl tracking-[0.25em] font-luxury font-bold text-white">
+            <a href="index.html">VANGUARD <span class="text-neutral-500 font-light">&amp;</span> VOYAGE</a>
+        </div>
+        <div class="flex items-center space-x-4">
+            <button id="themeSwitcherBtn" class="text-white hover:text-neutral-400 w-8 h-8 rounded-full border border-white/10 flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-palette text-xs"></i>
+            </button>
+            <button id="menuBtn" class="text-white hover:text-neutral-400 focus:outline-none flex items-center space-x-2">
+                <i class="fa-solid fa-bars-staggered text-lg"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 💎 DYNAMIC DRAWER MENU (ALL 10 LINK ROUTERS PRESERVED) -->
+    <div id="navDrawer" class="opacity-0 pointer-events-none scale-95 -translate-y-4 p-6 md:p-8 flex flex-col justify-between">
+        <div class="flex justify-between items-center border-b border-neutral-900 pb-3 mb-4">
+            <div class="text-[10px] tracking-widest font-luxury text-neutral-400">METRICS NAVIGATION</div>
+            <button id="closeBtn" class="text-neutral-400 hover:text-white text-xl"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="flex flex-col space-y-3 text-lg font-luxury py-2">
+            <a href="index.html" class="nav-link-item text-white border-l-2 border-white pl-2">Home Base</a>
+            <a href="travel.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Travel Packages</a>
+            <a href="events.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Event Production</a>
+            <a href="masterpieces.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Our Masterpieces</a>
+            <a href="blog.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Editorial Blog</a>
+            <a href="about.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Brand Heritage</a>
+            <a href="membership.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">The V&amp;V Club</a>
+            <a href="sustainability.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Conscious Footprints</a>
+            <a href="reviews.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Guest Ledger</a>
+            <a href="contact.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Contact Desk</a>
+        </div>
+    </div>
+
+    <!-- 🌌 ULTRA-LUXURIOUS ASYMMETRIC HERO DECK MODULE -->
+    <header class="min-h-screen w-full relative flex items-center pt-28 md:pt-12 px-6 md:px-16 overflow-hidden luxury-aurora-mesh">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"></div>
+        
+        <div class="max-w-5xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+            
+            <!-- LEFT COLUMN: ELITE STATEMENT TYPOGRAPHY -->
+            <div class="lg:col-span-6 space-y-6">
+                <div class="flex items-center space-x-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-white/60 animate-ping"></span>
+                    <span class="text-[10px] uppercase tracking-[0.5em] text-neutral-500 font-bold block">Sovereign Lifestyle Management</span>
+                </div>
+                <h1 class="text-6xl md:text-8xl font-bold font-luxury text-white leading-[0.9] tracking-tight">
+                    Beyond <br>
+                    <span class="luxury-text-stroke">Conventional</span> <br>
+                    Luxury
+                </h1>
+                <p class="text-xs md:text-sm text-neutral-400 max-w-sm font-light leading-relaxed">
+                    We engineer elite travel blueprints and high-end conceptual event production layers for those who settle for nothing short of absolute perfection.
+                </p>
+                <div class="pt-2">
+                    <div class="inline-flex items-center space-x-3 text-[10px] uppercase tracking-[0.3em] text-neutral-500">
+                        <span>Scroll to Inspect Vault</span>
+                        <i class="fa-chevron-down fa-solid animate-bounce text-[9px]"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN: RE-ENGINEERED OVERLAPPING DECK CONTAINER -->
+            <div class="lg:col-span-6 relative h-[520px] w-full flex items-center justify-center lg:justify-end mt-12 lg:mt-0 hero-card-deck">
+                
+                <!-- LAYER 1: TRAVEL CARD WORKING REDIRECT ROUTER -->
+                <div onclick="window.location.href='travel.html'" class="glass-card tilt-3d absolute top-4 left-2 md:left-8 w-[240px] md:w-[275px] h-[360px] rounded-2xl overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.4)] border border-white/10 group transition-all duration-300 z-20 cursor-pointer flex flex-col justify-end p-6">
+                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-1000 pointer-events-none" alt="Travel">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/30 to-transparent pointer-events-none"></div>
+                    
+                    <div class="relative z-10 space-y-2 pointer-events-none">
+                        <span class="text-[9px] uppercase tracking-[0.3em] text-white/75 block">01 / Channels</span>
+                        <!-- Added explicit helper class -->
+                        <h3 class="hero-main-title text-xl font-bold font-luxury tracking-wider">TRAVEL</h3>
+                        <!-- Added explicit helper class -->
+                        <span class="hero-action-link inline-flex items-center space-x-1.5 text-[10px] uppercase tracking-widest font-bold pt-1 border-b pb-0.5">
+                            <span>Explore Base</span> <i class="fa-solid fa-arrow-right text-[8px] ml-1 transition-transform duration-300 group-hover:translate-x-1"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- LAYER 2: EVENTS CARD WORKING REDIRECT ROUTER -->
+                <div onclick="window.location.href='events.html'" class="glass-card tilt-3d absolute bottom-4 right-2 md:right-0 w-[240px] md:w-[275px] h-[360px] rounded-2xl overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.4)] border border-white/10 group transition-all duration-300 z-10 cursor-pointer flex flex-col justify-end p-6">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-1000 pointer-events-none" alt="Events">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/30 to-transparent pointer-events-none"></div>
+                    
+                    <div class="relative z-10 space-y-2 pointer-events-none">
+                        <span class="text-[9px] uppercase tracking-[0.3em] text-white/75 block">02 / Production</span>
+                        <!-- Added explicit helper class -->
+                        <h3 class="hero-main-title text-xl font-bold font-luxury tracking-wider">EVENTS</h3>
+                        <!-- Added explicit helper class -->
+                        <span class="hero-action-link inline-flex items-center space-x-1.5 text-[10px] uppercase tracking-widest font-bold pt-1 border-b pb-0.5">
+                            <span>Inspect Stage</span> <i class="fa-solid fa-arrow-right text-[8px] ml-1 transition-transform duration-300 group-hover:translate-x-1"></i>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- 🌌 NORMAL SCROLL ELITE SHOWCASES SECTION -->
+    <section class="max-w-5xl mx-auto px-6 py-24">
+        <div class="flex justify-between items-end mb-12 border-b border-neutral-900 pb-4">
+            <div>
+                <span class="text-xs uppercase tracking-[0.3em] text-neutral-500 block mb-1">Handpicked Luxury</span>
+                <h2 class="text-3xl font-luxury font-bold text-white">Elite Showcases</h2>
+            </div>
+            <a href="travel.html" class="text-xs uppercase text-neutral-400 hover:text-white transition-colors">All Collections</a>
+        </div>
+        <div id="homeShowcaseGrid" class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6"></div>
+    </section>
+
+    <!-- 📝 MULTI-STEP CONCIERGE QUIZ MATRIX -->
+    <section class="max-w-3xl mx-auto px-6 pb-24">
+        <div class="glass-card rounded-3xl p-8 md:p-12 relative overflow-hidden border border-white/5 shadow-2xl">
+            
+            <div class="absolute top-0 left-0 right-0 h-1 bg-neutral-900">
+                <div id="quizProgressLine" class="h-full bg-white transition-all duration-500" style="width: 25%;"></div>
+            </div>
+
+            <form id="luxuryQuizForm" onsubmit="submitLuxuryQuiz(event)" class="space-y-6">
+                <div class="quiz-step quiz-step-active" data-step="1">
+                    <h3 class="text-2xl md:text-3xl font-luxury text-white text-center mb-2">What is your desired state of mind?</h3>
+                    <p class="text-xs text-neutral-500 text-center mb-8 font-light">Select an aura parameter to begin mapping coordinates</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs font-semibold uppercase tracking-wider">
+                        <button type="button" onclick="selectQuizOption(this, 'mindstate', 'Absolute Adventure')" class="p-4 border border-neutral-800 rounded-xl text-center hover:border-neutral-500 transition-colors text-neutral-300">Absolute Adventure</button>
+                        <button type="button" onclick="selectQuizOption(this, 'mindstate', 'Pure Seclusion & Serenity')" class="p-4 border border-neutral-800 rounded-xl text-center hover:border-neutral-500 transition-colors text-neutral-300">Pure Serenity</button>
+                        <button type="button" onclick="selectQuizOption(this, 'mindstate', 'Imperial Grandeur & Staging')" class="p-4 border border-neutral-800 rounded-xl text-center hover:border-neutral-500 transition-colors text-neutral-300">Imperial Grandeur</button>
+                    </div>
+                    <div class="flex justify-end mt-8"><button type="button" onclick="moveQuizStep(1)" class="bg-white text-black px-6 py-2.5 rounded-xl text-xs font-bold uppercase tracking-widest">Next Matrix →</button></div>
+                </div>
+
+                <div class="quiz-step" data-step="2">
+                    <h3 class="text-2xl md:text-3xl font-luxury text-white text-center mb-2">Which landscape accent inspires your blueprint?</h3>
+                    <p class="text-xs text-neutral-500 text-center mb-8 font-light">Select your preferred destination vista parameter</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs font-semibold uppercase tracking-wider">
+                        <button type="button" onclick="selectQuizOption(this, 'vista', 'Alpine Heights & Mountains')" class="p-4 border border-neutral-800 rounded-xl text-center hover:border-neutral-500 transition-colors text-neutral-300">Alpine Heights</button>
+                        <button type="button" onclick="selectQuizOption(this, 'vista', 'Secluded Tropical Coasts')" class="p-4 border border-neutral-800 rounded-xl text-center hover:border-neutral-500 transition-colors text-neutral-300">Tropical Coasts</button>
+                        <button type="button" onclick="selectQuizOption(this, 'vista', 'Heritage Forts & Desert Safaris')" class="p-4 border border-neutral-800 rounded-xl text-center hover:border-neutral-500 transition-colors text-neutral-300">Heritage Forts</button>
+                    </div>
+                    <div class="flex justify-between mt-8">
+                        <button type="button" onclick="moveQuizStep(-1)" class="text-neutral-400 hover:text-white text-xs uppercase tracking-widest">← Back</button>
+                        <button type="button" onclick="moveQuizStep(1)" class="bg-white text-black px-6 py-2.5 rounded-xl text-xs font-bold uppercase tracking-widest">Next Matrix →</button>
+                    </div>
+                </div>
+
+                <div class="quiz-step" data-step="3">
+                    <h3 class="text-2xl md:text-3xl font-luxury text-white text-center mb-2">Select your targeted alignment budget layer?</h3>
+                    <p class="text-xs text-neutral-500 text-center mb-8 font-light">Bespoke pricing parameters scale automatically</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs font-semibold uppercase tracking-wider">
+                        <button type="button" onclick="selectQuizOption(this, 'budget', 'Premium Group (₹12K - ₹25K)')" class="p-4 border border-neutral-800 rounded-xl text-center hover:border-neutral-500 transition-colors text-neutral-300">Premium Grid</button>
+                        <button type="button" onclick="selectQuizOption(this, 'budget', 'Bespoke Executive (₹30K - ₹50K)')" class="p-4 border border-neutral-800 rounded-xl text-center hover:border-neutral-500 transition-colors text-neutral-300">Executive Core</button>
+                        <button type="button" onclick="selectQuizOption(this, 'budget', 'Ultra Elite Charter Customization')" class="p-4 border border-neutral-800 rounded-xl text-center hover:border-neutral-500 transition-colors text-neutral-300">Ultra Elite Sovereign</button>
+                    </div>
+                    <div class="flex justify-between mt-8">
+                        <button type="button" onclick="moveQuizStep(-1)" class="text-neutral-400 hover:text-white text-xs uppercase tracking-widest">← Back</button>
+                        <button type="button" onclick="moveQuizStep(1)" class="bg-white text-black px-6 py-2.5 rounded-xl text-xs font-bold uppercase tracking-widest">Final Step →</button>
+                    </div>
+                </div>
+
+                <div class="quiz-step" data-step="4">
+                    <h3 class="text-2xl md:text-3xl font-luxury text-white text-center mb-2">Secure identity configurations</h3>
+                    <p class="text-xs text-neutral-500 text-center mb-8 font-light">Submit details to forward your custom blueprint structure directly via WhatsApp</p>
+                    <div class="max-w-md mx-auto space-y-4 text-xs">
+                        <input type="text" id="quizClientName" placeholder="Your Full Name" required class="w-full bg-neutral-900 border border-neutral-800 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-neutral-500 transition-colors">
+                        <input type="text" id="quizClientContact" placeholder="WhatsApp / Phone Coordinate" required class="w-full bg-neutral-900 border border-neutral-800 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-neutral-500 transition-colors">
+                    </div>
+                    <div class="flex justify-between items-center mt-8 max-w-md mx-auto">
+                        <button type="button" onclick="moveQuizStep(-1)" class="text-neutral-400 hover:text-white text-xs uppercase tracking-widest">← Back</button>
+                        <button type="submit" class="bg-white text-black px-8 py-3 rounded-xl text-xs font-bold uppercase tracking-widest shadow-lg flex items-center space-x-2">
+                            <i class="fa-brands fa-whatsapp text-sm"></i> <span>Transmit Blueprint</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- 🟢 MASTER BRAND FOOTER TERMINAL -->
+    <footer class="bg-[#030303] border-t border-neutral-900 text-neutral-400 text-xs">
+        <div class="max-w-5xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="space-y-4">
+                <div class="text-white text-base tracking-widest font-luxury font-bold">VANGUARD &amp; VOYAGE</div>
+                <p class="text-neutral-500 font-light leading-relaxed">Curating absolute bespoke parameters across luxury travel coordination and elite structural event staging sectors globally.</p>
+            </div>
+            <div class="space-y-2">
+                <h4 class="text-white font-bold text-[11px] uppercase tracking-widest">Platform Channels</h4>
+                <a href="travel.html" class="block hover:text-white text-neutral-500">Travel Architecture</a>
+                <a href="events.html" class="block hover:text-white text-neutral-500">Event Production</a>
+                <a href="masterpieces.html" class="block hover:text-white text-neutral-500">Our Masterpieces</a>
+            </div>
+            <div class="space-y-2">
+                <h4 class="text-white font-bold text-[11px] uppercase tracking-widest">Elite Links</h4>
+                <a href="membership.html" class="block hover:text-white text-neutral-500">The V&amp;V Club</a>
+                <a href="sustainability.html" class="block hover:text-white text-neutral-500">Conscious Luxury</a>
+                <a href="reviews.html" class="block hover:text-white text-neutral-500">Guest Ledger Letters</a>
+            </div>
+            <div class="space-y-2">
+                <h4 class="text-white font-bold text-[11px] uppercase tracking-widest">Headquarters</h4>
+                <p class="text-neutral-500 leading-relaxed font-light">Sovereign Towers, 7th Floor, Golf Course Road, Gurugram, 122002<br>Hotline: +91 63674 05386</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FIXED WHATSAPP FLOATER -->
+    <a id="whatsappFloat" target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-transform hover:scale-110">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const container = document.getElementById("homeShowcaseGrid");
+            if(container) {
+                const showcases = travelPackages.slice(0, 3);
+                showcases.forEach(p => {
+                    container.innerHTML += `
+                        <div class="glass-card tilt-3d rounded-2xl overflow-hidden group p-1 flex flex-col justify-between">
+                            <div>
+                                <div class="relative h-48 overflow-hidden rounded-xl">
+                                    <img src="${p.image}" class="w-full h-full object-cover">
+                                    <div class="filter-indicator absolute top-3 right-3 bg-black/80 border border-white/10 text-white text-[10px] px-2 py-0.5 rounded">₹${parseInt(p.price).toLocaleString('en-IN')}</div>
+                                </div>
+                                <div class="p-4 space-y-2">
+                                    <h3 class="text-lg font-bold font-luxury text-white">${p.title}</h3>
+                                    <p class="text-xs text-neutral-400 line-clamp-2 font-light">${p.description}</p>
+                                </div>
+                            </div>
+                            <div class="p-4 pt-0 mt-4">
+                                <a href="package-detail.html?id=${p.id}" class="block w-full text-center bg-white text-black py-2 rounded-lg text-[11px] font-bold uppercase tracking-wider">Inspect Base</a>
+                            </div>
+                        </div>
+                    `;
+                });
+            }
+            if (typeof applyLuxury3DTilt === 'function') { applyLuxury3DTilt(); }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Concierge | Vanguard & Voyage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 👑 ADDITIONAL EDITORIAL FINISHES FOR PREMIUM DESK TERMINALS */
+        .contact-header-stroke {
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+            color: transparent;
+        }
+        body.luxury-sand-theme .contact-header-stroke {
+            -webkit-text-stroke: 1px rgba(28, 26, 23, 0.25);
+        }
+        body.luxury-sand-theme .contact-headline-title {
+            color: #1c1a17 !important;
+        }
+        
+        /* 🍦 DYNAMIC SAND THEME INPUT & CONTAINER OVERRIDES */
+        body.luxury-sand-theme .contact-input-field {
+            background-color: transparent !important;
+            border-color: rgba(28, 26, 23, 0.25) !important;
+            color: #1c1a17 !important;
+        }
+        body.luxury-sand-theme .contact-input-field::placeholder {
+            color: #8a8075 !important;
+        }
+        body.luxury-sand-theme .contact-panel-wrapper {
+            background-color: transparent !important;
+            border-color: rgba(28, 26, 23, 0.15) !important;
+        }
+        body.luxury-sand-theme .contact-detail-text {
+            color: #4a443e !important;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden bg-[#050505]">
+
+    <!-- 🟢 NAV BAR (UNTOUCHED CORE FUNCTIONALITY) -->
+    <nav class="fixed top-4 left-4 right-4 z-50 glass-nav rounded-full px-8 py-4 flex justify-between items-center max-w-5xl mx-auto">
+        <div class="text-xl tracking-[0.25em] font-luxury font-bold text-white">
+            <a href="index.html">VANGUARD <span class="text-neutral-500 font-light">&amp;</span> VOYAGE</a>
+        </div>
+        <div class="flex items-center space-x-4">
+            <button id="themeSwitcherBtn" class="text-white hover:text-neutral-400 focus:outline-none w-8 h-8 rounded-full border border-white/10 flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-palette text-xs"></i>
+            </button>
+            <button id="menuBtn" class="text-white hover:text-neutral-400 focus:outline-none flex items-center space-x-2">
+                <i class="fa-solid fa-bars-staggered text-lg"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 💎 DYNAMIC DRAWER MENU (ALL 10 LINK ROUTERS PRESERVED) -->
+    <div id="navDrawer" class="opacity-0 pointer-events-none scale-95 -translate-y-4 p-6 md:p-8 flex flex-col justify-between">
+        <div class="flex justify-between items-center border-b border-neutral-900 pb-3 mb-4">
+            <div class="text-[10px] tracking-widest font-luxury text-neutral-400">METRICS NAVIGATION</div>
+            <button id="closeBtn" class="text-neutral-400 hover:text-white text-xl"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="flex flex-col space-y-3 text-lg font-luxury py-2">
+            <a href="index.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Home Base</a>
+            <a href="travel.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Travel Packages</a>
+            <a href="events.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Event Production</a>
+            <a href="masterpieces.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Our Masterpieces</a>
+            <a href="blog.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Editorial Blog</a>
+            <a href="about.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Brand Heritage</a>
+            <a href="membership.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">The V&amp;V Club</a>
+            <a href="sustainability.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Conscious Footprints</a>
+            <a href="reviews.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Guest Ledger</a>
+            <a href="contact.html" class="nav-link-item text-white border-l-2 border-white pl-2">Contact Desk</a>
+        </div>
+        <div class="text-[9px] text-neutral-600 border-t border-neutral-900 pt-3 mt-4">© 2026 Vanguard &amp; Voyage.</div>
+    </div>
+
+    <!-- 🌌 NEW ASYMMETRIC ATTRACTIVE EDITORIAL HEADER BLOCK -->
+    <header class="pt-44 pb-16 max-w-5xl mx-auto px-6 relative">
+        <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"></div>
+        
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between border-b border-neutral-900/60 pb-10 gap-8">
+            <div class="space-y-3">
+                <div class="flex items-center space-x-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-neutral-600"></span>
+                    <span class="text-[10px] uppercase tracking-[0.5em] text-neutral-500 font-bold block">Concierge Ingress</span>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-bold font-luxury text-white leading-none tracking-tight">
+                    Connect With <br class="hidden md:block">
+                    <span class="contact-header-stroke">Our Desk</span>
+                </h1>
+            </div>
+            <div class="max-w-xs">
+                <p class="text-xs text-neutral-500 font-light leading-relaxed text-left md:text-right">
+                    Establish priority communication parameters with our global staging and bespoke asset travel coordination teams.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- 🌌 CLEAN INDUSTRIAL STATIC COMMAND STATION LAYOUT (3D TILT REMOVED FOR PREMIUM STATIC LOOK) -->
+    <main class="max-w-5xl mx-auto px-6 pb-36 grid grid-cols-1 lg:grid-cols-5 gap-12 items-start pt-6">
+        
+        <!-- LEFT PANEL: COORDINATES LEDGER -->
+        <div class="lg:col-span-2 space-y-6">
+            <h2 class="contact-headline-title text-xl font-bold font-luxury text-white tracking-wide">Information Coordinates</h2>
+            
+            <!-- COORDINATE ROW 01 -->
+            <div class="contact-panel-wrapper glass-card p-5 rounded-2xl bg-neutral-950/20 border border-neutral-900/60 backdrop-blur-xl flex items-center space-x-5 group transition-colors hover:border-neutral-800">
+                <div class="w-11 h-11 rounded-xl bg-neutral-900/40 border border-neutral-800 flex items-center justify-center text-white shrink-0 group-hover:border-white group-hover:bg-white group-hover:text-black transition-all">
+                    <i class="fa-solid fa-location-dot text-xs"></i>
+                </div>
+                <div class="space-y-0.5">
+                    <h4 class="text-[9px] uppercase font-bold tracking-widest text-neutral-500">HQ Coordinate</h4>
+                    <p class="contact-detail-text text-xs text-neutral-300 font-light leading-relaxed">Sovereign Towers, 7th Floor, Golf Course Road, Gurugram, 122002</p>
+                </div>
+            </div>
+
+            <!-- COORDINATE ROW 02 -->
+            <div class="contact-panel-wrapper glass-card p-5 rounded-2xl bg-neutral-950/20 border border-neutral-900/60 backdrop-blur-xl flex items-center space-x-5 group transition-colors hover:border-neutral-800">
+                <div class="w-11 h-11 rounded-xl bg-neutral-900/40 border border-neutral-800 flex items-center justify-center text-white shrink-0 group-hover:border-white group-hover:bg-white group-hover:text-black transition-all">
+                    <i class="fa-solid fa-phone text-xs"></i>
+                </div>
+                <div class="space-y-0.5">
+                    <h4 class="text-[9px] uppercase font-bold tracking-widest text-neutral-500">Direct Hotline</h4>
+                    <p class="contact-detail-text text-xs text-neutral-300 font-light tracking-wider font-mono">+91 63674 05386</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT PANEL: HIGH-END STRUCTURAL COMMAND FORM -->
+        <div class="lg:col-span-3">
+            <div class="contact-panel-wrapper glass-card p-6 md:p-8 rounded-[2rem] bg-neutral-950/20 border border-neutral-900/60 backdrop-blur-xl shadow-2xl">
+                <form onsubmit="sendInquiryViaWhatsApp(event, 'Platform Contact Desk')" class="space-y-5 text-[11px] uppercase tracking-widest font-bold">
+                    
+                    <div class="space-y-1.5">
+                        <label class="text-[9px] text-neutral-500 tracking-[0.2em]">Identification Mapping</label>
+                        <input type="text" name="Sender Name" placeholder="Full Identification" required class="contact-input-field w-full bg-neutral-900/50 border border-neutral-900 rounded-xl px-4 py-3.5 text-white focus:outline-none tracking-wide font-normal normal-case">
+                    </div>
+
+                    <div class="space-y-1.5">
+                        <label class="text-[9px] text-neutral-500 tracking-[0.2em]">Digital Endpoint</label>
+                        <input type="email" name="Email Base" placeholder="Email Address" required class="contact-input-field w-full bg-neutral-900/50 border border-neutral-900 rounded-xl px-4 py-3.5 text-white focus:outline-none tracking-wide font-normal normal-case">
+                    </div>
+
+                    <div class="space-y-1.5">
+                        <label class="text-[9px] text-neutral-500 tracking-[0.2em]">Message Blueprints</label>
+                        <textarea name="Inquiry String" rows="4" required class="contact-input-field w-full bg-neutral-900/50 border border-neutral-900 rounded-xl px-4 py-3.5 text-white focus:outline-none resize-none tracking-wide font-normal normal-case" placeholder="Outline architectural scope details..."></textarea>
+                    </div>
+
+                    <div class="pt-2">
+                        <button type="submit" class="w-full bg-white text-black py-3.5 rounded-xl font-black text-[10px] uppercase tracking-[0.25em] flex items-center justify-center space-x-2 transition-transform active:scale-[0.99] shadow-xl hover:bg-neutral-200">
+                            <i class="fa-solid fa-paper-plane text-[9px]"></i> 
+                            <span>Transmit to WhatsApp</span>
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- 🟢 MASTER BRAND FOOTER TERMINAL -->
+    <footer class="bg-[#030303] border-t border-neutral-900 text-neutral-400 text-xs">
+        <div class="max-w-5xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="space-y-4">
+                <div class="text-white text-base tracking-widest font-luxury font-bold">VANGUARD &amp; VOYAGE</div>
+                <p class="text-neutral-500 font-light leading-relaxed">Curating absolute bespoke parameters across luxury travel coordination and elite structural event staging sectors globally.</p>
+            </div>
+            <div class="space-y-2">
+                <h4 class="text-white font-bold text-[11px] uppercase tracking-widest">Platform Channels</h4>
+                <a href="travel.html" class="block hover:text-white text-neutral-500">Travel Architecture</a>
+                <a href="events.html" class="block hover:text-white text-neutral-500">Event Production</a>
+                <a href="masterpieces.html" class="block hover:text-white text-neutral-500">Our Masterpieces</a>
+            </div>
+            <div class="space-y-2">
+                <h4 class="text-white font-bold text-[11px] uppercase tracking-widest">Elite Links</h4>
+                <a href="membership.html" class="block hover:text-white text-neutral-500">The V&amp;V Club</a>
+                <a href="sustainability.html" class="block hover:text-white text-neutral-500">Conscious Luxury</a>
+                <a href="reviews.html" class="block hover:text-white text-neutral-500">Guest Ledger Letters</a>
+            </div>
+            <div class="space-y-2">
+                <h4 class="text-white font-bold text-[11px] uppercase tracking-widest">Headquarters</h4>
+                <p class="text-neutral-500 leading-relaxed font-light">
+                    Sovereign Towers, 7th Floor, Golf Course Road, Gurugram, 122002<br>
+                    Hotline: +91 63674 05386
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- UNTOUCHED UNIFORM FLOATING WHATSAPP INTERFACE -->
+    <a id="whatsappFloat" target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-transform hover:scale-110">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

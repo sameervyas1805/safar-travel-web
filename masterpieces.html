@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Masterpieces Portfolio | Vanguard & Voyage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 👑 EDITORIAL STYLING FOR CRAZY HIGH-NET ARCHITECTURE */
+        .editorial-text-stroke {
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+            color: transparent;
+        }
+        body.luxury-sand-theme .editorial-text-stroke {
+            -webkit-text-stroke: 1px rgba(28, 26, 23, 0.25);
+        }
+        body.luxury-sand-theme .masterpiece-card-title {
+            color: #1c1a17 !important;
+        }
+        
+        /* 🍦 DYNAMIC SAND THEME BADGES TEXT & BACKGROUND COLOR OVERRIDES */
+        body.luxury-sand-theme .masterpiece-type-badge {
+            background-color: #1c1a17 !important;
+            color: #ebdcd0 !important;
+            border: 1px solid rgba(28, 26, 23, 0.15) !important;
+        }
+        
+        /* Asymmetric Unique Magazine Cuts for Art Gallery Grid */
+        .crazy-cut-left { border-radius: 2rem 0.5rem 2rem 2rem; }
+        .crazy-cut-right { border-radius: 2rem 2rem 0.5rem 2rem; }
+        .crazy-cut-center { border-radius: 0.5rem 2rem 2rem 2rem; }
+    </style>
+</head>
+<body class="overflow-x-hidden bg-[#050505]">
+
+    <!-- 🟢 NAV BAR (UNTOUCHED CORE FUNCTIONALITY) -->
+    <nav class="fixed top-4 left-4 right-4 z-50 glass-nav rounded-full px-8 py-4 flex justify-between items-center max-w-5xl mx-auto">
+        <div class="text-xl tracking-[0.25em] font-luxury font-bold text-white">
+            <a href="index.html">VANGUARD <span class="text-neutral-500 font-light">&amp;</span> VOYAGE</a>
+        </div>
+        <div class="flex items-center space-x-4">
+            <button id="themeSwitcherBtn" class="text-white hover:text-neutral-400 w-8 h-8 rounded-full border border-white/10 flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-palette text-xs"></i>
+            </button>
+            <button id="menuBtn" class="text-white hover:text-neutral-400 focus:outline-none flex items-center space-x-2">
+                <i class="fa-solid fa-bars-staggered text-lg"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 💎 DYNAMIC DRAWER MENU (ALL 10 LINK ROUTERS PRESERVED) -->
+    <div id="navDrawer" class="opacity-0 pointer-events-none scale-95 -translate-y-4 p-6 md:p-8 flex flex-col justify-between">
+        <div class="flex justify-between items-center border-b border-neutral-900 pb-3 mb-4">
+            <div class="text-[10px] tracking-widest font-luxury text-neutral-400">METRICS NAVIGATION</div>
+            <button id="closeBtn" class="text-neutral-400 hover:text-white text-xl"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="flex flex-col space-y-3 text-lg font-luxury py-2">
+            <a href="index.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Home Base</a>
+            <a href="travel.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Travel Packages</a>
+            <a href="events.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Event Production</a>
+            <a href="masterpieces.html" class="nav-link-item text-white border-l-2 border-white pl-2">Our Masterpieces</a>
+            <a href="blog.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Editorial Blog</a>
+            <a href="about.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Brand Heritage</a>
+            <a href="membership.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">The V&amp;V Club</a>
+            <a href="sustainability.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Conscious Footprints</a>
+            <a href="reviews.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Guest Ledger</a>
+            <a href="contact.html" class="nav-link-item text-neutral-400 hover:text-white transition-all">Contact Desk</a>
+        </div>
+        <div class="text-[9px] text-neutral-600 border-t border-neutral-900 pt-3 mt-4">© 2026 Vanguard &amp; Voyage.</div>
+    </div>
+
+    <!-- 🌌 NEW ASYMMETRIC MASTER PIECES PORTFOLIO HEADER -->
+    <header class="pt-44 pb-16 max-w-5xl mx-auto px-6 relative">
+        <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"></div>
+        
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between border-b border-neutral-900/60 pb-10 gap-8">
+            <div class="space-y-3">
+                <div class="flex items-center space-x-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-neutral-600"></span>
+                    <span class="text-[10px] uppercase tracking-[0.5em] text-neutral-500 font-bold block">Platform Artifacts</span>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-bold font-luxury text-white leading-none tracking-tight">
+                    Our Master <br class="hidden md:block">
+                    <span class="editorial-text-stroke">Masterpieces</span>
+                </h1>
+            </div>
+            
+            <!-- CONTEMPORARY RADAR STRIP FILTER SELECTION DOCK -->
+            <div class="flex flex-wrap gap-2 bg-neutral-950/20 md:bg-[#0a0a0a]/40 border border-neutral-900/40 p-1.5 rounded-full backdrop-blur-xl">
+                <button onclick="filterMasterpieces('all')" class="masterpiece-tab px-4 py-2 rounded-full text-[10px] uppercase tracking-widest font-bold bg-white text-black transition-all">Show All</button>
+                <button onclick="filterMasterpieces('travel')" class="masterpiece-tab px-4 py-2 rounded-full text-[10px] uppercase tracking-widest font-bold bg-transparent text-neutral-400 hover:text-white transition-all">Travel Trips</button>
+                <button onclick="filterMasterpieces('events')" class="masterpiece-tab px-4 py-2 rounded-full text-[10px] uppercase tracking-widest font-bold bg-transparent text-neutral-400 hover:text-white transition-all">Organized Events</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 🌌 CRAZY STYLED STATIC PACKAGES GRID SYSTEM -->
+    <main class="max-w-5xl mx-auto px-6 pb-32 pt-6">
+        <div id="masterpiecesGrid" class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-12"></div>
+    </main>
+
+    <!-- 🟢 MASTER BRAND FOOTER TERMINAL -->
+    <footer class="bg-[#030303] border-t border-neutral-900 text-neutral-400 text-xs">
+        <div class="max-w-5xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="space-y-4">
+                <div class="text-white text-base tracking-widest font-luxury font-bold">VANGUARD &amp; VOYAGE</div>
+                <p class="text-neutral-500 font-light leading-relaxed">Curating absolute bespoke parameters across luxury travel coordination and elite structural event staging sectors globally.</p>
+            </div>
+            <div class="space-y-2">
+                <h4 class="text-white font-bold text-[11px] uppercase tracking-widest">Platform Channels</h4>
+                <a href="travel.html" class="block hover:text-white text-neutral-500">Travel Architecture</a>
+                <a href="events.html" class="block hover:text-white text-neutral-500">Event Production</a>
+                <a href="masterpieces.html" class="block hover:text-white text-neutral-500">Our Masterpieces</a>
+            </div>
+            <div class="space-y-2">
+                <h4 class="text-white font-bold text-[11px] uppercase tracking-widest">Elite Links</h4>
+                <a href="membership.html" class="block hover:text-white text-neutral-500">The V&amp;V Club</a>
+                <a href="sustainability.html" class="block hover:text-white text-neutral-500">Conscious Luxury</a>
+                <a href="reviews.html" class="block hover:text-white text-neutral-500">Guest Ledger Letters</a>
+            </div>
+            <div class="space-y-2">
+                <h4 class="text-white font-bold text-[11px] uppercase tracking-widest">Headquarters</h4>
+                <p class="text-neutral-500 leading-relaxed font-light">Sovereign Towers, 7th Floor, Golf Course Road, Gurugram, 122002<br>Hotline: +91 63674 05386</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- UNTOUCHED UNIFORM FLOATING WHATSAPP INTERFACE -->
+    <a id="whatsappFloat" target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-transform hover:scale-110">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => { renderMasterpieces('all'); });
+
+        function renderMasterpieces(filterKey) {
+            const container = document.getElementById("masterpiecesGrid");
+            container.innerHTML = "";
+            const targetItems = filterKey === 'all' ? masterpieces : masterpieces.filter(m => m.type === filterKey);
+
+            targetItems.forEach((item, index) => {
+                const card = document.createElement("div");
+                
+                // 🎨 RANDOM CHOSEN UNIQUE ASYMMETRIC BORDER CUT PATTERNS
+                let cutStyle = "crazy-cut-left";
+                if (index % 3 === 1) cutStyle = "crazy-cut-center";
+                if (index % 3 === 2) cutStyle = "crazy-cut-right";
+                
+                // Static grid bindings with premium borders for industrial aesthetics
+                card.className = `glass-card tilt-3d ${cutStyle} overflow-hidden group p-1.5 flex flex-col justify-between border border-neutral-900/60 bg-neutral-950/40 backdrop-blur-md transition-all duration-300 hover:border-neutral-700/60`;
+                card.innerHTML = `
+                    <div>
+                        <!-- High-fashion asymmetrical image framework masking -->
+                        <div class="relative h-56 overflow-hidden ${cutStyle}">
+                            <img src="${item.image}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                            <div class="masterpiece-type-badge absolute bottom-3 right-3 bg-black/90 border border-white/10 px-3 py-1 rounded text-[8px] font-bold uppercase tracking-[0.2em] text-white backdrop-blur-md">
+                                ${item.type.toUpperCase()}
+                            </div>
+                        </div>
+                        <div class="p-5 space-y-3">
+                            <div class="flex items-center space-x-4 text-[9px] text-neutral-500 uppercase tracking-widest">
+                                <span><i class="fa-solid fa-calendar-days text-neutral-600 mr-1.5"></i> ${item.date}</span>
+                                <span class="w-1 h-1 bg-neutral-800 rounded-full"></span>
+                                <span><i class="fa-solid fa-location-dot text-neutral-600 mr-1.5"></i> ${item.location}</span>
+                            </div>
+                            <h3 class="masterpiece-card-title text-xl font-bold font-luxury text-white tracking-wide leading-snug group-hover:text-neutral-300 transition-colors">${item.title}</h3>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0">
+                        <div class="w-full h-px bg-neutral-900/60 mb-4"></div>
+                        <div class="flex justify-between items-center text-[9px] text-neutral-400 uppercase tracking-[0.25em] font-medium">
+                            <span class="group-hover:text-white transition-colors">Secure Log Ledger</span>
+                            <div class="w-5 h-5 rounded-full border border-neutral-800 flex items-center justify-center group-hover:border-white group-hover:bg-white group-hover:text-black transition-all">
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[7px]"></i>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+            applyLuxury3DTilt();
+        }
+
+        function filterMasterpieces(type) {
+            const tabs = document.querySelectorAll(".masterpiece-tab");
+            tabs.forEach(btn => {
+                btn.classList.remove("bg-white", "text-black");
+                btn.classList.add("text-neutral-400", "bg-transparent");
+            });
+            event.target.classList.remove("text-neutral-400", "bg-transparent");
+            event.target.classList.add("bg-white", "text-black");
+            renderMasterpieces(type);
+        }
+    </script>
+</body>
+</html>
