@@ -229,7 +229,9 @@ body.luxury-sand-theme footer {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-    backdrop-blur: 20px;
+    /* Use backdrop-filter for blur effects; include vendor prefix for Safari */
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
 }
 .vv-secret-modal.vv-vault-active {
     opacity: 1;
