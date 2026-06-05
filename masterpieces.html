@@ -41,6 +41,9 @@
             <a href="index.html">VANGUARD <span class="text-neutral-500 font-light">&amp;</span> VOYAGE</a>
         </div>
         <div class="flex items-center space-x-4">
+            <button id="audioAtmosphereBtn" class="text-white hover:text-neutral-400 w-8 h-8 rounded-full border border-white/10 flex items-center justify-center transition-colors focus:outline-none" title="Toggle Atmosphere Aura">
+                <i id="audioAtmosphereIcon" class="fa-solid fa-volume-xmark text-xs"></i>
+            </button>
             <button id="themeSwitcherBtn" class="text-white hover:text-neutral-400 w-8 h-8 rounded-full border border-white/10 flex items-center justify-center transition-colors">
                 <i class="fa-solid fa-palette text-xs"></i>
             </button>
@@ -88,10 +91,10 @@
             </div>
             
             <!-- CONTEMPORARY RADAR STRIP FILTER SELECTION DOCK -->
-            <div class="flex flex-wrap gap-2 bg-neutral-950/20 md:bg-[#0a0a0a]/40 border border-neutral-900/40 p-1.5 rounded-full backdrop-blur-xl">
-                <button onclick="filterMasterpieces('all')" class="masterpiece-tab px-4 py-2 rounded-full text-[10px] uppercase tracking-widest font-bold bg-white text-black transition-all">Show All</button>
-                <button onclick="filterMasterpieces('travel')" class="masterpiece-tab px-4 py-2 rounded-full text-[10px] uppercase tracking-widest font-bold bg-transparent text-neutral-400 hover:text-white transition-all">Travel Trips</button>
-                <button onclick="filterMasterpieces('events')" class="masterpiece-tab px-4 py-2 rounded-full text-[10px] uppercase tracking-widest font-bold bg-transparent text-neutral-400 hover:text-white transition-all">Organized Events</button>
+            <div class="flex flex-nowrap gap-2 bg-neutral-950/20 md:bg-[#0a0a0a]/40 border border-neutral-900/40 p-1.5 rounded-full backdrop-blur-xl">
+                <button onclick="filterMasterpieces('all')" class="masterpiece-tab whitespace-nowrap px-4 py-2 rounded-full text-[10px] uppercase tracking-widest font-bold bg-white text-black transition-all">Show All</button>
+                <button onclick="filterMasterpieces('travel')" class="masterpiece-tab whitespace-nowrap px-4 py-2 rounded-full text-[10px] uppercase tracking-widest font-bold bg-transparent text-neutral-400 hover:text-white transition-all">Travel Trips</button>
+                <button onclick="filterMasterpieces('events')" class="masterpiece-tab whitespace-nowrap px-4 py-2 rounded-full text-[10px] uppercase tracking-widest font-bold bg-transparent text-neutral-400 hover:text-white transition-all">Organized Events</button>
             </div>
         </div>
     </header>

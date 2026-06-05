@@ -139,3 +139,148 @@ body.luxury-sand-theme footer {
 .quiz-step { display: none; }
 .quiz-step.quiz-step-active { display: block; animation: quizFadeIn 0.5s ease forwards; }
 @keyframes quizFadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+/* 👑 OPERATING SYSTEM HARDWARE ACCELERATED ULTRA-STABLE CURSOR RULES */
+@media (pointer: fine) {
+    /* Hiding defaults ONLY on base body flow canvas safely */
+    body {
+        cursor: none !important;
+    }
+    
+    /* ⚡ CRITICAL FIX: Direct native browser support for interactive control nodes to prevent freezing clicks */
+    a, button, select, input, textarea, [role="button"], .cursor-pointer {
+        cursor: none !important; /* Will stay custom, but acts as a fallback layer */
+    }
+
+    /* The tiny high-contrast inner laser dot pointer */
+    .vv-custom-dot {
+        width: 8px;
+        height: 8px;
+        background-color: #ffffff;
+        position: fixed;
+        top: -100px; /* Initially offscreen until mouse moves or wakes */
+        left: -100px;
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 999999; /* Keeping it on absolute absolute top peak */
+        transform: translate(-50%, -50%);
+        will-change: left, top;
+        transition: width 0.2s, height 0.2s, background-color 0.2s;
+    }
+
+    /* The elegant translucent outer atmospheric feedback halo ring */
+    .vv-custom-halo {
+        width: 36px;
+        height: 36px;
+        border: 1.5px solid rgba(255, 255, 255, 0.4);
+        position: fixed;
+        top: -100px;
+        left: -100px;
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 999998;
+        transform: translate(-50%, -50%);
+        will-change: left, top;
+        /* Balanced lag-free trail fluid motion */
+        transition: transform 0.04s linear, width 0.25s, height 0.25s, background-color 0.25s, border-color 0.25s;
+    }
+
+    /* 🍦 ADAPTIVE SAND THEME POINTER SHIFTING ACCENTS */
+    body.luxury-sand-theme .vv-custom-dot {
+        background-color: #1c1a17 !important;
+    }
+    body.luxury-sand-theme .vv-custom-halo {
+        border-color: rgba(28, 26, 23, 0.5) !important;
+    }
+
+    /* ⚡ HOVER MATRIX FEEDBACK INTERPOLATIONS */
+    body.vv-pointer-hovering .vv-custom-dot {
+        width: 4px;
+        height: 4px;
+        background-color: #ffffff !important;
+    }
+    body.vv-pointer-hovering .vv-custom-halo {
+        width: 50px;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 0.12);
+        border-color: #ffffff !important;
+    }
+
+    /* Sand accent interaction modes */
+    body.luxury-sand-theme.vv-pointer-hovering .vv-custom-dot {
+        background-color: #1c1a17 !important;
+    }
+    body.luxury-sand-theme.vv-pointer-hovering .vv-custom-halo {
+        background-color: rgba(28, 26, 23, 0.08);
+        border-color: #1c1a17 !important;
+    }
+}
+
+/* 🔒 SECRET VAULT VAULT GATE OVERLAYS */
+.vv-secret-modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(3, 3, 3, 0.98);
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    backdrop-blur: 20px;
+}
+.vv-secret-modal.vv-vault-active {
+    opacity: 1;
+    pointer-events: auto;
+}
+.vv-vault-stroke {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.15);
+    color: transparent;
+}
+body.luxury-sand-theme .vv-secret-modal {
+    background-color: rgba(235, 220, 208, 0.99) !important;
+}
+body.luxury-sand-theme .vv-vault-stroke {
+    -webkit-text-stroke: 1px rgba(28, 26, 23, 0.2);
+}
+
+/* 🕯️ CINEMATIC SMOOTH PAGE LOADER MASTER STRUCTURAL INTERFACE */
+.vv-global-loader {
+    position: fixed;
+    inset: 0;
+    background-color: #050505;
+    z-index: 999999; /* 🚀 Placed on top of everything, even the custom cursor */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    opacity: 1;
+    transition: opacity 0.5s cubic-bezier(0.25, 1, 0.5, 1), transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    will-change: opacity, transform;
+}
+
+/* 🍦 SAND THEME LOADER OVERRIDES COMPATIBILITY */
+body.luxury-sand-theme .vv-global-loader {
+    background-color: #ebdcd0 !important;
+}
+
+/* Micro Spinner Vector Dot Line */
+.vv-loader-spinner {
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: vvSpinnerRotate 0.8s linear infinite;
+}
+body.luxury-sand-theme .vv-loader-spinner {
+    border-color: rgba(28, 26, 23, 0.1);
+    border-top-color: #1c1a17;
+}
+
+@keyframes vvSpinnerRotate {
+    to { transform: rotate(360deg); }
+}
