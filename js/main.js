@@ -52,20 +52,36 @@ function applyLuxury3DTilt() {
 }
 
 /**
- * 🍦 LUXURY THEME CONTROLLER SWITCH (SAND & CREAM PERSISTENCE MODE)
+ * 🍦 LUXURY THEME CONTROLLER SWITCH (SAND & CREAM AS FIRST IMPRESSION DEFAULT)
  */
 function initLuxuryThemeSwitcher() {
     const switcherBtn = document.getElementById("themeSwitcherBtn");
     if (!switcherBtn) return;
 
-    // LocalStorage checking logic on runtime initialize
-    if (localStorage.getItem("luxuryTheme") === "sand") {
+    // 🎯 INITIALIZATION CORE: Check what state is in storage
+    const savedTheme = localStorage.getItem("luxuryTheme");
+
+    // If no theme has been saved yet (First time user opens the site), FORCE Sand & Cream!
+    if (!savedTheme) {
+        localStorage.setItem("luxuryTheme", "sand");
         document.body.classList.add("luxury-sand-theme");
         switcherBtn.innerHTML = `<i class="fa-solid fa-moon text-xs"></i>`;
+    } 
+    // If user explicitly chose 'sand' in previous sessions
+    else if (savedTheme === "sand") {
+        document.body.classList.add("luxury-sand-theme");
+        switcherBtn.innerHTML = `<i class="fa-solid fa-moon text-xs"></i>`;
+    } 
+    // If user explicitly chose 'dark' in previous sessions
+    else {
+        document.body.classList.remove("luxury-sand-theme");
+        switcherBtn.innerHTML = `<i class="fa-solid fa-palette text-xs"></i>`;
     }
 
+    // ⚡ INTERACTION METRICS: Toggle states smoothly on click
     switcherBtn.addEventListener("click", () => {
         document.body.classList.toggle("luxury-sand-theme");
+        
         if (document.body.classList.contains("luxury-sand-theme")) {
             localStorage.setItem("luxuryTheme", "sand");
             switcherBtn.innerHTML = `<i class="fa-solid fa-moon text-xs"></i>`;
